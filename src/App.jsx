@@ -11,8 +11,8 @@ import RutasPublicas from "./routes/RutasPublicas";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+<BrowserRouter basename={import.meta.env.BASE_URL}>
+<Routes>
 
         <Route
           path="/"
