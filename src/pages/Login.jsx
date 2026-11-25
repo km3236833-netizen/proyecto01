@@ -19,3 +19,4 @@ const onSubmit = (data) => {
   navegacion("/", { replace: true });
 
 };
+export default Login;
