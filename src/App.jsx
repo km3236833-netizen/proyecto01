@@ -1,6 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Registro from "./pages/Registro";
@@ -11,7 +10,7 @@ import RutasPublicas from "./routes/RutasPublicas";
 
 function App() {
   return (
-<BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
 <Routes>
 
         <Route
@@ -37,7 +36,7 @@ function App() {
         <Route path="*" element={<Error />} />
 
       </Routes>
-    </BrowserRouter>
+      </HashRouter>
   );
 }
 
