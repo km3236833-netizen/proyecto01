@@ -1,0 +1,156 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #101820, #182c35, #243b32);
+    color: #f1f1f1;
+}
+
+/* Contenedor principal */
+.container-fluid {
+    min-height: 100vh;
+    padding: 30px !important;
+}
+
+h1 {
+    font-weight: bold;
+    color: #161616;
+    text-shadow: 6px 2px 8px rgba(19, 19, 19, 0.4);
+}
+
+
+.btn-secondary {
+    background-color: #97ce4c;
+    color: #182c35;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #b7e878;
+    color: #101820;
+    transform: scale(1.05);
+}
+
+
+.card {
+    background-color: #243b32;
+    color: #ffffff;
+    border: 2px solid #97ce4c;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(151, 206, 76, 0.25);
+}
+
+/* Imagen del personaje */
+.card-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.card:hover .card-img img {
+    transform: scale(1.04);
+}
+
+/* Contenido de la tarjeta */
+.card-body {
+    padding: 20px;
+}
+
+/* Nombre del personaje */
+.card-body h1 {
+    font-size: 22px;
+    color: #97ce4c;
+    margin-bottom: 15px;
+}
+
+/* Género y especie */
+.card-body p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #e0e0e0;
+}
+
+
+
+.row {
+    row-gap: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 15px !important;
+    }
+
+    .card-body h1 {
+        font-size: 19px;
+    }
+
+    .card-body p {
+        font-size: 14px;
+    }
+}
+
+/* Tarjeta del personaje */
+.tarjeta-personaje {
+    align-items: center;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Nombre arriba */
+.nombre-personaje {
+    font-size: 22px;
+    margin: 10px 0 25px;
+    color: #97ce4c;
+    overflow-wrap: anywhere;
+}
+
+/* Espacio para la imagen */
+.contenedor-rombo {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    transform: rotate(45deg);
+    border: 4px solid #97ce4c;
+    border-radius: 15px;
+    margin: 15px 0 30px;
+}
+
+/* Imagen girada para quedar derecha dentro del rombo */
+.imagen-rombo {
+    width: 140%;
+    height: 140%;
+    object-fit: cover;
+    transform: rotate(-45deg) scale(1.05);
+}
+
+/* Información debajo de la imagen */
+.tarjeta-personaje .card-body {
+    width: 100%;
+    padding: 15px 5px 5px;
+}
+
+.tarjeta-personaje .card-body p {
+    margin: 8px 0;
+    color: #ffffff;
+    font-size: 16px;
+}
